@@ -1,0 +1,3 @@
+module DassetsErb
+  VERSION = "0.0.1"
+end
