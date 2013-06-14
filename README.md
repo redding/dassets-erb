@@ -1,10 +1,26 @@
-# DassetsErb
+# Dassets::Erb
 
-TODO: Write a gem description
+Dassets [engine](https://github.com/redding/dassets#compiling) for compiling dynamic asserts written in Erb.
 
 ## Usage
 
-TODO: Write code samples and usage instructions here
+Register the engine:
+
+```ruby
+# in config/assets.rb
+require 'dassets'
+require 'dassets-erb'
+
+Dassets.configure do |c|
+  c.root_path '/some/root/path'
+
+  # register the engine
+  c.engine 'erb', Dassets::Erb::Engine
+
+end
+```
+
+Add `.erb` to any source files in your source path.  Dassets will compile their content using Erb, remove the `.erb` extension, and write the output to the output path.
 
 ## Installation
 
