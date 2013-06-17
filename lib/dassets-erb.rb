@@ -1,5 +1,5 @@
 require "dassets-erb/version"
 
-module DassetsErb
+module Dassets::Erb
   # TODO: your code goes here...
 end

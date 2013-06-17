@@ -12,10 +12,10 @@ require 'dassets'
 require 'dassets-erb'
 
 Dassets.configure do |c|
-  c.root_path '/some/root/path'
 
-  # register the engine
-  c.engine 'erb', Dassets::Erb::Engine
+  c.source "/path/to/assets") do |s|
+    s.engine 'erb', Dassets::Erb::Engine
+  end
 
 end
 ```
