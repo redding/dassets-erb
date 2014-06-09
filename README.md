@@ -1,6 +1,6 @@
 # Dassets::Erb
 
-Dassets [engine](https://github.com/redding/dassets#compiling) for compiling dynamic asserts written in Erb.
+Dassets [engine](https://github.com/redding/dassets#compiling) for compiling dynamic assets written in Erb.
 
 ## Usage
 
