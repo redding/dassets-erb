@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version     = Dassets::Erb::VERSION
   gem.authors     = ["Kelly Redding", "Collin Redding"]
   gem.email       = ["kelly@kellyredding.com", "collin.redding@me.com"]
-  gem.description = %q{Dassets engine for compiling Erb}
   gem.summary     = %q{Dassets engine for compiling Erb}
+  gem.description = %q{Dassets engine for compiling Erb}
   gem.homepage    = "http://github.com/redding/dassets-erb"
   gem.license     = 'MIT'
 
@@ -18,8 +18,8 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.add_development_dependency("assert", ["~> 2.10"])
+  gem.add_development_dependency("assert", ["~> 2.15.1"])
 
-  gem.add_dependency("dassets")
+  gem.add_dependency("dassets", ["~> 0.13.2"])
 
 end
