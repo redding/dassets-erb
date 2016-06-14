@@ -1,20 +1,20 @@
-module Dassets::Erb
+require 'assert/factory'
 
-  module Factory
-    module_function
+module Factory
+  extend Assert::Factory
 
-    def name
-      "Joe"
-    end
+  module_function
 
-    def erb
-      "hello, <%= Dassets::Erb::Factory.name %>!"
-    end
+  def name
+    "Joe"
+  end
 
-    def erb_compiled
-      "hello, Joe!"
-    end
+  def erb
+    "hello, <%= Factory.name %>!"
+  end
 
+  def erb_compiled
+    "hello, Joe!"
   end
 
 end
