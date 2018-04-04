@@ -18,8 +18,8 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.add_development_dependency("assert", ["~> 2.16.1"])
+  gem.add_development_dependency("assert", ["~> 2.16.3"])
 
-  gem.add_dependency("dassets", ["~> 0.14.0"])
+  gem.add_dependency("dassets", ["~> 0.14.5"])
 
 end
