@@ -11,15 +11,16 @@ Gem::Specification.new do |gem|
   gem.summary     = %q{Dassets engine for compiling Erb}
   gem.description = %q{Dassets engine for compiling Erb}
   gem.homepage    = "http://github.com/redding/dassets-erb"
-  gem.license     = 'MIT'
+  gem.license     = "MIT"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 
-  gem.add_development_dependency("assert", ["~> 2.16.3"])
+  gem.required_ruby_version = "~> 2.5"
 
-  gem.add_dependency("dassets", ["~> 0.14.5"])
+  gem.add_development_dependency("assert", ["~> 2.19.0"])
 
+  gem.add_dependency("dassets", ["~> 0.15.0"])
 end
