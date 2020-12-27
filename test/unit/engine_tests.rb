@@ -21,10 +21,12 @@ class Dassets::Erb::Engine
       assert_that(subject).responds_to("compile")
     end
 
-    should "remove any input extension" do
+    should "only remove ERB-like input extensions" do
       assert_that(subject.ext("erb")).equals("")
       assert_that(subject.ext("erubis")).equals("")
-      assert_that(subject.ext("whatever")).equals("")
+      assert_that(subject.ext("erubi")).equals("")
+      assert_that(subject.ext("css")).equals("css")
+      assert_that(subject.ext("js")).equals("js")
     end
 
     should "compile any input content as ERB" do
