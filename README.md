@@ -1,6 +1,8 @@
 # Dassets::Erb
 
-Dassets [engine](https://github.com/redding/dassets#compiling) for compiling dynamic assets written in Erb.
+Dassets [engine](https://github.com/redding/dassets#compiling) to compile dynamic asset files written with ERB.
+
+See [Dassets::Erubi](https://github.com/redding/dassets-erubi) for a clone that uses [Erubi](https://github.com/jeremyevans/erubi) to do the compilation.
 
 ## Usage
 

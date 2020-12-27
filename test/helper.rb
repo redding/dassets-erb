@@ -9,8 +9,4 @@ require "pry"
 
 require "test/support/factory"
 
-class Assert::Context
-  setup{ @factory = Factory }
-end
-
 ENV["DASSETS_TEST_MODE"] = "yes"
