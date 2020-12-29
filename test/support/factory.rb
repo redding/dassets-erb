@@ -1,4 +1,4 @@
-require 'assert/factory'
+require "assert/factory"
 
 module Factory
   extend Assert::Factory
@@ -16,5 +16,4 @@ module Factory
   def erb_compiled
     "hello, Joe!"
   end
-
 end

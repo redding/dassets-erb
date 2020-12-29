@@ -8,15 +8,13 @@ Register the engine:
 
 ```ruby
 # in config/assets.rb
-require 'dassets'
-require 'dassets-erb'
+require "dassets"
+require "dassets-erb"
 
 Dassets.configure do |c|
-
   c.source "/path/to/assets") do |s|
-    s.engine 'erb', Dassets::Erb::Engine
+    s.engine "erb", Dassets::Erb::Engine
   end
-
 end
 ```
 
