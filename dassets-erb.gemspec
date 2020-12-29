@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version     = Dassets::Erb::VERSION
   gem.authors     = ["Kelly Redding", "Collin Redding"]
   gem.email       = ["kelly@kellyredding.com", "collin.redding@me.com"]
-  gem.summary     = %q{Dassets engine for compiling Erb}
-  gem.description = %q{Dassets engine for compiling Erb}
+  gem.summary     = %q{Dassets engine to compile ERB.}
+  gem.description = %q{Dassets engine fo compile ERB.}
   gem.homepage    = "http://github.com/redding/dassets-erb"
   gem.license     = "MIT"
 
