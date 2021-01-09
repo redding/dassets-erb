@@ -5,6 +5,7 @@ require "dassets/engine"
 require "dassets-erb/version"
 
 module Dassets::Erb; end
+
 class Dassets::Erb::Engine < Dassets::Engine
   def self.ERB_EXTENSIONS
     ["erb", "erubis", "erubi"]

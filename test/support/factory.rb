@@ -1,9 +1,10 @@
+# frozen_string_literal: true
+
 require "assert/factory"
 
 module Factory
   extend Assert::Factory
-
-  module_function
+  extend self
 
   def name
     "Joe"

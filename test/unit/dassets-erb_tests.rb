@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "assert"
 require "dassets-erb"
 
@@ -6,16 +8,16 @@ require "dassets/engine"
 module Dassets::Erb
   class UnitTests < Assert::Context
     desc "Dassets::Erb"
-    subject { unit_class }
+    subject{ unit_class }
 
-    let(:unit_class) { Dassets::Erb }
+    let(:unit_class){ Dassets::Erb }
   end
 
   class EngineTests < UnitTests
     desc "Engine"
-    subject { engine_class }
+    subject{ engine_class }
 
-    let(:engine_class) { unit_class::Engine }
+    let(:engine_class){ unit_class::Engine }
 
     should "know its ERB extensions" do
       assert_that(subject.ERB_EXTENSIONS).equals(["erb", "erubis", "erubi"])
@@ -24,7 +26,7 @@ module Dassets::Erb
 
   class EngineInitTests < EngineTests
     desc "when init"
-    subject { engine_class.new }
+    subject{ engine_class.new }
 
     should "be a Dassets engine" do
       assert_that(subject).is_kind_of(Dassets::Engine)
